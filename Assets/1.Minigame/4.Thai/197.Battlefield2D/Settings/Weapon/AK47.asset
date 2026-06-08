@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea53d36c39ba7214781aae4ce75ffdae, type: 3}
+  m_Name: AK47
+  m_EditorClassIdentifier: 
+  weaponName: 0
+  damage: 35
+  nameSlot: ak47
+  fireRate: 0.13
+  recoil: 20
+  reloadTime: 1.5
+  sizeClip: 30
+  numberOfTotalBullet: 120
+  weight: 1.3
+  speedBullet: 45
+  rangePoint: 2
+  imgWhite: {fileID: 21300000, guid: a1d4b9cdda932ae428245e62470c999e, type: 3}
+  weaponSprite: {fileID: 21300000, guid: 520dbeb3f3c803146a74364af1fed691, type: 3}
+  scaleOnNotification: 0.3
+  soundFire:
+  - {fileID: 8300000, guid: 52569988ac8ce034bbf7dcd992f65ae4, type: 3}
+  - {fileID: 8300000, guid: 6ceaf02328503d043b15aed50d61dabe, type: 3}
+  soundReload: {fileID: 0}

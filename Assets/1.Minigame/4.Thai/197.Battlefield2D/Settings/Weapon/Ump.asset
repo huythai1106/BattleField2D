@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea53d36c39ba7214781aae4ce75ffdae, type: 3}
+  m_Name: Ump
+  m_EditorClassIdentifier: 
+  weaponName: 7
+  damage: 18
+  nameSlot: ump
+  fireRate: 0.09
+  recoil: 15
+  reloadTime: 0.8
+  sizeClip: 25
+  numberOfTotalBullet: 100
+  weight: 0.8
+  speedBullet: 40
+  rangePoint: 1.5
+  imgWhite: {fileID: 21300000, guid: 2c92f80f401eb4f44927bc5f5427b8fd, type: 3}
+  weaponSprite: {fileID: 21300000, guid: 1738947384a0a564cb1d76310dcbbc1b, type: 3}
+  scaleOnNotification: 0.2
+  soundFire:
+  - {fileID: 8300000, guid: 3c4c574f9706f8c4594e3d9c141838f0, type: 3}
+  - {fileID: 8300000, guid: df79def16de955741b9778d045a79d09, type: 3}
+  soundReload: {fileID: 0}

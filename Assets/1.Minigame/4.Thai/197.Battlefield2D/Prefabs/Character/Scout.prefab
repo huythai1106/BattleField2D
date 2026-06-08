@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3235814117714584383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -35.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669452521696629391, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294903606986964584, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_Name
+      value: Scout
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274523283531217951, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274523283531217951, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: initialSkinName
+      value: Scout_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076380991220295971, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: classSetting
+      value: 
+      objectReference: {fileID: 11400000, guid: 817ff250ec27a5047b1c98184b1c9345, type: 2}
+    - target: {fileID: 6560860103510563050, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: df0e7c57ada74e140a439f4ff7108816, type: 3}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889203f74b54d2a4aae0299d42628d00, type: 3}
+  m_Name: KeyBoard
+  m_EditorClassIdentifier: 
+  player1:
+    left: 97
+    right: 100
+    up: 119
+    down: 115
+    attack: 106
+    skillOne: 107
+    skillTwo: 108
+    block: 32
+    chaos: 105
+  player2:
+    left: 276
+    right: 275
+    up: 273
+    down: 274
+    attack: 257
+    skillOne: 258
+    skillTwo: 259
+    block: 256
+    chaos: 260

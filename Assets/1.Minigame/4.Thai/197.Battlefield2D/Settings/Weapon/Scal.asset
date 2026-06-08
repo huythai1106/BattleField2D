@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea53d36c39ba7214781aae4ce75ffdae, type: 3}
+  m_Name: Scal
+  m_EditorClassIdentifier: 
+  weaponName: 2
+  damage: 25
+  nameSlot: scal_l
+  fireRate: 0.11
+  recoil: 15
+  reloadTime: 1.5
+  sizeClip: 30
+  numberOfTotalBullet: 120
+  weight: 1.2
+  speedBullet: 45
+  rangePoint: 2
+  imgWhite: {fileID: 21300000, guid: 2e39e8515fe4a8644905b1aeef220b7c, type: 3}
+  weaponSprite: {fileID: 21300000, guid: a63d8d5dc6468394eaa4f71c6cbde243, type: 3}
+  scaleOnNotification: 0.3
+  soundFire:
+  - {fileID: 8300000, guid: a959a1426e18fad44b9c2add72d82ada, type: 3}
+  - {fileID: 8300000, guid: 3b80e80708ae26d4ca33bc8e3d7ea025, type: 3}
+  - {fileID: 8300000, guid: 7f9ad76081e4ec9439d56e610d9bf736, type: 3}
+  - {fileID: 8300000, guid: 9766e10d24e52114097cdb306a0fca65, type: 3}
+  soundReload: {fileID: 0}

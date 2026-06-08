@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea53d36c39ba7214781aae4ce75ffdae, type: 3}
+  m_Name: S686
+  m_EditorClassIdentifier: 
+  weaponName: 6
+  damage: 15
+  nameSlot: shotgun
+  fireRate: 0.5
+  recoil: 0
+  reloadTime: 1.5
+  sizeClip: 8
+  numberOfTotalBullet: 32
+  weight: 1.3
+  speedBullet: 35
+  rangePoint: 1.5
+  imgWhite: {fileID: 21300000, guid: dd798f2e90a620440b740ceca9d2db53, type: 3}
+  weaponSprite: {fileID: 21300000, guid: a49c6fee7b819d942ad5aff99fdc6361, type: 3}
+  scaleOnNotification: 0.2
+  soundFire:
+  - {fileID: 8300000, guid: 4edc2d6de604f994aaaf71f9d679fb56, type: 3}
+  - {fileID: 8300000, guid: 01ceb41206adeae49af68eee9f005b80, type: 3}
+  soundReload: {fileID: 0}
