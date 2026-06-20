@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/1.Minigame/4.Thai/197.Battlefield2D/Battlefield2DAI.unity
+    guid: b600b99959e58be41a4b476d21342f03
   m_configObjects: {}

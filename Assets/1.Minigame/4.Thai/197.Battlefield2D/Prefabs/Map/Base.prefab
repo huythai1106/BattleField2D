@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4675520555511918925}
   - component: {fileID: 893057588014224315}
   - component: {fileID: 4250153476244958863}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3654256921178446660}
   - component: {fileID: 1350951526555241165}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 755353326690154039}
   - component: {fileID: 1782475050811190272}
   - component: {fileID: 3916918432354033533}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 1041290303407948039}
   - component: {fileID: 1428650939515228000}
   - component: {fileID: 6373461714576154393}
-  m_Layer: 5
+  m_Layer: 4
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 3209433619672610712}
   - component: {fileID: 4579624587921312125}
   - component: {fileID: 202680254786671531}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: FlagAnim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
