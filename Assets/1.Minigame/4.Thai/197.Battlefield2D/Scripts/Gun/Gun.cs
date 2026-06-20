@@ -133,7 +133,7 @@ namespace Minigame.Battlefield
 
             if (GunSetting.soundFire.Length != 0)
             {
-                // Game2PlayerSoundManager.instance.PlaySoundEffect(GunSetting.soundFire[Random.Range(0, GunSetting.soundFire.Length)]);
+                SoundManager.instance.PlaySoundEffect(GunSetting.soundFire[Random.Range(0, GunSetting.soundFire.Length)]);
             }
         }
 
@@ -200,7 +200,7 @@ namespace Minigame.Battlefield
                 yield break;
             }
 
-            // Game2PlayerSoundManager.instance.PlaySoundEffect("reload");
+            SoundManager.instance.PlaySoundEffect("reload");
             Debug.Log("Reload");
 
             if (characterOwner.controller is HumanController)

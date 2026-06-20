@@ -41,6 +41,7 @@ namespace Minigame.Battlefield
         public BindableProperty<int> remainingTimePlaying = new(0);
         public bool isFinishGame = false;
         public bool isStartGame = false;
+        public GameResultUI gameResultUI;
 
         public event Action OnFinishGame;
 
@@ -168,11 +169,13 @@ namespace Minigame.Battlefield
         public void FinishGame(int team)
         {
             isFinishGame = true;
-            // CancelInvoke(nameof(ChangeRemainingTimePlaying));
+            CancelInvoke(nameof(ChangeRemainingTimePlaying));
             CancelInvoke();
 
             OnFinishGame?.Invoke();
             // Game2PlayerReplayCanvas.instance.ShowReplayCoop(team);
+            gameResultUI.gameObject.SetActive(true);
+            gameResultUI.ShowResult(team != 0);
         }
 
         #region Utils
@@ -244,7 +247,7 @@ namespace Minigame.Battlefield
 
         private void PlayVoiceSound()
         {
-            // Game2PlayerSoundManager.instance.PlaySoundEffectList("voice");
+            SoundManager.instance.PlaySoundEffectList("voice");
             Invoke(nameof(PlayVoiceSound), UnityEngine.Random.Range(6, 9));
         }
 

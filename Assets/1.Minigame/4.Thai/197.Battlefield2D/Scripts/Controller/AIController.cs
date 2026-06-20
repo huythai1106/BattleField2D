@@ -175,7 +175,7 @@ namespace Minigame.Battlefield
 
         private IEnumerator ShootCouroutine()
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
 
             while (targetShoot)
             {

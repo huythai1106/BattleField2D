@@ -17,7 +17,7 @@
 //         public void ThowNade(float direct)
 //         {
 //             rb.velocity = new Vector2(direct * 3, 3);
-//             Game2PlayerSoundManager.instance.PlaySoundEffect("gmh_grenade");
+//             SoundManager.instance.PlaySoundEffect("gmh_grenade");
 //         }
 
 //         private void SetExplosion()

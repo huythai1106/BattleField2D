@@ -18,7 +18,7 @@ MonoBehaviour:
     up: 119
     down: 115
     attack: 106
-    skillOne: 107
+    skillOne: 114
     skillTwo: 108
     block: 32
     chaos: 105

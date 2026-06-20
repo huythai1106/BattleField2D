@@ -29,12 +29,12 @@
 //             if (typeItem == TypeItem.Health)
 //             {
 //                 EffectManager.Instance.CreatedEffect("healing", player.transform);
-//                 Game2PlayerSoundManager.instance.PlaySoundEffect("heal");
+//                 SoundManager.instance.PlaySoundEffect("heal");
 //             }
 //             else
 //             {
 //                 EffectManager.Instance.CreatedEffect("armor", player.transform);
-//                 Game2PlayerSoundManager.instance.PlaySoundEffect("armor");
+//                 SoundManager.instance.PlaySoundEffect("armor");
 //             }
 //             player.FixProperties(typeItem);
 //         }

@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: 7
   damage: 18
+  imgWhite: {fileID: 21300000, guid: 2c92f80f401eb4f44927bc5f5427b8fd, type: 3}
+  weaponSprite: {fileID: 21300000, guid: 1738947384a0a564cb1d76310dcbbc1b, type: 3}
+  scaleOnNotification: 0.2
   nameSlot: ump
   fireRate: 0.09
   recoil: 15
@@ -23,10 +26,7 @@ MonoBehaviour:
   weight: 0.8
   speedBullet: 40
   rangePoint: 1.5
-  imgWhite: {fileID: 21300000, guid: 2c92f80f401eb4f44927bc5f5427b8fd, type: 3}
-  weaponSprite: {fileID: 21300000, guid: 1738947384a0a564cb1d76310dcbbc1b, type: 3}
-  scaleOnNotification: 0.2
   soundFire:
-  - {fileID: 8300000, guid: 3c4c574f9706f8c4594e3d9c141838f0, type: 3}
-  - {fileID: 8300000, guid: df79def16de955741b9778d045a79d09, type: 3}
-  soundReload: {fileID: 0}
+  - {fileID: 8300000, guid: 5c9cb0dbebed1e54ea153f1be9dbb1dc, type: 3}
+  - {fileID: 8300000, guid: 9075dd06ee2abbf4db6e391a203d51e3, type: 3}
+  soundReload: {fileID: 8300000, guid: 6c5fad14d46801548b40142696385bc9, type: 3}

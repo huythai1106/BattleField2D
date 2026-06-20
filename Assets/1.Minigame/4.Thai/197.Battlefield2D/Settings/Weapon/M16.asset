@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: 1
   damage: 25
+  imgWhite: {fileID: 21300000, guid: ce3d4c0db492652439fe43083073489e, type: 3}
+  weaponSprite: {fileID: 21300000, guid: 5a0e94e6d54412241b3544e0ab1a66cc, type: 3}
+  scaleOnNotification: 0.3
   nameSlot: m16a4
   fireRate: 0.1
   recoil: 12
@@ -23,10 +26,9 @@ MonoBehaviour:
   weight: 1.25
   speedBullet: 45
   rangePoint: 2
-  imgWhite: {fileID: 21300000, guid: ce3d4c0db492652439fe43083073489e, type: 3}
-  weaponSprite: {fileID: 21300000, guid: 5a0e94e6d54412241b3544e0ab1a66cc, type: 3}
-  scaleOnNotification: 0.3
   soundFire:
-  - {fileID: 8300000, guid: 3c8546a316889844bbf5d1ecef8604a2, type: 3}
-  - {fileID: 8300000, guid: d493f5ce750b6db4281ab6a1301889ec, type: 3}
-  soundReload: {fileID: 0}
+  - {fileID: 8300000, guid: 1b9b872d173af0345b083f5d7258329c, type: 3}
+  - {fileID: 8300000, guid: 85e0a0c653eac4044ae31387562e6381, type: 3}
+  - {fileID: 8300000, guid: e4f94fad2cad02e45a3ef313a9aba2cd, type: 3}
+  - {fileID: 8300000, guid: 8dd69615a74b60643bfad939816c6482, type: 3}
+  soundReload: {fileID: 8300000, guid: 6c5fad14d46801548b40142696385bc9, type: 3}

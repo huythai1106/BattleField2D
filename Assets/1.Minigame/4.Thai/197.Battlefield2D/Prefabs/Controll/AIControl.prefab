@@ -52,7 +52,7 @@ MonoBehaviour:
   nextWayPointDistance: 1
   targetMove: {fileID: 0}
   targetShoot: {fileID: 0}
-  rangeAttack: 7.5
+  rangeAttack: 10
   isReachEndPath: 0
   stylePlayer: 0
   targetPlayers: []

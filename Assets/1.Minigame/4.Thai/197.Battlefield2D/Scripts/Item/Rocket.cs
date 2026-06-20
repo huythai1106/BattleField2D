@@ -24,14 +24,14 @@ namespace Minigame.Battlefield
             sprite.DOScale(scaleSprite, 1f);
             Invoke(nameof(Explosion), timeDrop);
 
-            // Game2PlayerSoundManager.instance.PlaySoundEffect("bombDrop");
+            SoundManager.instance.PlaySoundEffect("bombDrop");
         }
 
         private void Explosion()
         {
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius, GameManager.Instance.layerPlayer);
             EffectManager.Instance.CreatedEffect("expRocket", transform);
-            // Game2PlayerSoundManager.instance.PlaySoundEffectList("bombExp");
+            SoundManager.instance.PlaySoundEffectList("bombExp");
 
             SourceDamage source = new SourceDamage()
             {

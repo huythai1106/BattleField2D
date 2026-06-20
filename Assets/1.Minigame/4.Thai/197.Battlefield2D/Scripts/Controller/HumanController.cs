@@ -11,7 +11,8 @@ namespace Minigame.Battlefield
     public class HumanController : Controller
     {
         public FixedJoystick joystickMove;
-        public FixedJoystick joystickShoot;
+
+        // Đã xóa joystickShoot vì chuyển sang dùng chuột
 
         private KeyBoardSetting.KeyBoard keyBoard;
         public CS2D.CameraFollow cameraFollow;
@@ -30,9 +31,13 @@ namespace Minigame.Battlefield
         public InfoUI infoUI;
         public float sizeCamDead = 14f;
 
+        private Camera cachedCamera; // Tối ưu: Cache Camera để tránh gọi GetComponent liên tục
+
         private void Awake()
         {
-            cameraSize = cameraFollow.GetComponent<Camera>().orthographicSize;
+            // Lưu lại tham chiếu để tránh GC/overhead
+            cachedCamera = cameraFollow.GetComponent<Camera>();
+            cameraSize = cachedCamera.orthographicSize;
         }
 
         protected override void Start()
@@ -52,17 +57,19 @@ namespace Minigame.Battlefield
         protected override void Controll()
         {
             HandleMove();
-            HandleShoot();
+            HandleAimAndShoot();
+
+            if (Input.GetKeyDown(keyBoard.skillOne))
+            {
+                OnReload();
+            }
         }
 
         public override void SetCharacter(BaseCharacter c)
         {
             base.SetCharacter(c);
-            // cameraFollow.target = character.transform;
 
             ZoomIn();
-
-            // ChangeCamSize(c.classSetting.scope);
 
             healthUI.RegisterFunc(c);
             bulletUI.RegisterFunc(c);
@@ -90,12 +97,31 @@ namespace Minigame.Battlefield
             character.APIModule.MoveAPI(moveDirection * revert);
         }
 
-        private void HandleShoot()
+        private void HandleAimAndShoot()
         {
-            var dir = joystickShoot.Direction * revert;
+            if (character == null || cachedCamera == null) return;
+
+            // 1. Lấy tọa độ chuột trên màn hình và chuyển đổi sang World Space
+            Vector3 mouseWorldPos = cachedCamera.ScreenToWorldPoint(Input.mousePosition);
+
+            // Ép trục Z về 0 để đảm bảo tính toán vector chuẩn xác trên mặt phẳng 2D
+            mouseWorldPos.z = 0f;
+
+            // 2. Tính toán hướng từ nhân vật đến vị trí chuột
+            Vector2 dir = (mouseWorldPos - character.transform.position).normalized * revert;
+
+            // 3. Cập nhật góc xoay của nhân vật liên tục theo vị trí chuột
             character.APIModule.RotateAPI(dir);
 
-            character.APIModule.ShootAPI(dir);
+            // 4. Thực hiện lệnh bắn khi nhấn giữ chuột trái (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0))
+            {
+                character.APIModule.ShootAPI(dir);
+            }
+            else
+            {
+                character.APIModule.ShootAPI(Vector2.zero);
+            }
         }
 
         public void ChangeCamSize(float mul)
@@ -104,7 +130,7 @@ namespace Minigame.Battlefield
 
             if (cameraFollow)
             {
-                cameraFollow.GetComponent<Camera>().orthographicSize = cameraSize * mul;
+                cachedCamera.orthographicSize = cameraSize * mul;
             }
         }
 
@@ -119,7 +145,7 @@ namespace Minigame.Battlefield
         {
             Vector2 rotate = Vector2.zero;
 
-            if (joystickMove.Direction != Vector2.zero)
+            if (joystickMove != null && joystickMove.Direction != Vector2.zero)
             {
                 rotate += joystickMove.Direction.normalized;
             }
@@ -150,20 +176,18 @@ namespace Minigame.Battlefield
         private void ZoomIn()
         {
             var camsize = character.classSetting.scope * cameraSize;
-            var cam = cameraFollow.GetComponent<Camera>();
 
-            cam.DOOrthoSize(camsize, 1);
+            cachedCamera.DOOrthoSize(camsize, 1);
 
-            cam.transform.DOMove(new Vector3(character.transform.position.x, character.transform.position.y, -10), 1).OnComplete(() =>
+            cachedCamera.transform.DOMove(new Vector3(character.transform.position.x, character.transform.position.y, -10), 1).OnComplete(() =>
             {
                 cameraFollow.target = character.transform;
             });
-
         }
 
         private void ZoomOut()
         {
-            cameraFollow.GetComponent<Camera>().DOOrthoSize(sizeCamDead, 1);
+            cachedCamera.DOOrthoSize(sizeCamDead, 1);
         }
 
         public void OnReload()

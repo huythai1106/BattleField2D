@@ -60,7 +60,7 @@ namespace Minigame.Battlefield
 
             if (character.controller is HumanController)
             {
-                // Game2PlayerSoundManager.instance.PlaySoundEffectList("die");
+                SoundManager.instance.PlaySoundEffectList("die");
             }
 
             character.team.BackToAvailable(character);

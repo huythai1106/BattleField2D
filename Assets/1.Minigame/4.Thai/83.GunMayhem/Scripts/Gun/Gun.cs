@@ -44,7 +44,7 @@
 //                 amountBullet--;
 //                 timeBtwFire = gunSetting.fireRate;
 //                 character.playerUI?.UpdateUI(TextUI.Bullet, character.currentGun.amountBullet.ToString());
-//                 // if (gunSetting.audioClips) Game2PlayerSoundManager.instance.PlaySoundEffect(gunSetting.audioClip);
+//                 // if (gunSetting.audioClips) SoundManager.instance.PlaySoundEffect(gunSetting.audioClip);
 //                 PlaySoundEffectShoot();
 
 //                 GunManager.Instance.CreateCartouche(character.pointHoldGun.position);
@@ -65,7 +65,7 @@
 //         {
 //             if (gunSetting.audioClips.Length > 0)
 //             {
-//                 Game2PlayerSoundManager.instance.PlaySoundEffect(gunSetting.audioClips[UnityEngine.Random.Range(0, gunSetting.audioClips.Length)]);
+//                 SoundManager.instance.PlaySoundEffect(gunSetting.audioClips[UnityEngine.Random.Range(0, gunSetting.audioClips.Length)]);
 //             }
 //         }
 

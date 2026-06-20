@@ -31,11 +31,11 @@
 //         {
 //             if (breakSound != null)
 //             {
-//                 Game2PlayerSoundManager.instance.PlaySoundEffect(breakSound);
+//                 SoundManager.instance.PlaySoundEffect(breakSound);
 //             }
 //             else
 //             {
-//                 Game2PlayerSoundManager.instance.PlaySoundEffect("breakWall");
+//                 SoundManager.instance.PlaySoundEffect("breakWall");
 //             }
 
 //             gameObject.SetActive(false);

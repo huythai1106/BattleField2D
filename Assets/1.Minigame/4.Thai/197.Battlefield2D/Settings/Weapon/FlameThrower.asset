@@ -27,4 +27,4 @@ MonoBehaviour:
   speedBullet: 0
   rangePoint: 1.5
   soundFire: []
-  soundReload: {fileID: 0}
+  soundReload: {fileID: 8300000, guid: 6c5fad14d46801548b40142696385bc9, type: 3}

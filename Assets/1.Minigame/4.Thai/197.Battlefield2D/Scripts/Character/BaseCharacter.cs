@@ -276,7 +276,7 @@ namespace Minigame.Battlefield
 
             if (rb.velocity.magnitude > 0)
             {
-                // Game2PlayerSoundManager.instance.PlaySoundEffectLists("waterWalk");
+                SoundManager.instance.PlaySoundEffectList("waterWalk");
                 // EffectManager.Instance.CreatedEffect("waterWave", transform);
             }
         }
