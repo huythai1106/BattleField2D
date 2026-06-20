@@ -36,7 +36,7 @@ namespace Minigame.Battlefield
         private void Awake()
         {
             // Lưu lại tham chiếu để tránh GC/overhead
-            cachedCamera = cameraFollow.GetComponent<Camera>();
+            cachedCamera = Camera.main;
             cameraSize = cachedCamera.orthographicSize;
         }
 

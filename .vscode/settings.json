@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "BattleField2D.sln"
+    "dotnet.defaultSolution": "BattleField2D.sln",
+    "liveServer.settings.port": 5501
 }
